@@ -3,5 +3,6 @@
 <div class="user-item" *ngFor="let user of (users$ | async)">
   <br>
   <user [data]="user"></user>
+  <button [routerLink]="'/user/view/' + user.id">View</button>
   <hr>
 </div>

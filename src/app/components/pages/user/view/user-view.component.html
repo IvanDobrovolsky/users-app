@@ -1,1 +1,4 @@
 <h1>User view</h1>
+<user [data]="(user$ | async)"></user>
+
+<button [routerLink]="'/user/list/'">Back</button>

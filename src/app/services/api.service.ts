@@ -15,7 +15,7 @@ export class ApiService {
   }
 
   public getUser(userId: string): Observable<IUser> {
-    return this.http.get<IUser>(this.apiUrl);
+    return this.http.get<IUser>(`${this.apiUrl}/users/${userId}`);
   }
 
   public updateUser(userId: string, updatedUser: IUser): Observable<IUser> {
