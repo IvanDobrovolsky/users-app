@@ -8,7 +8,6 @@ import * as constants from '../constants';
 export class ApiService {
   constructor(@Inject(constants.ApiUrlToken) private apiUrl: string,
               private http: HttpClient) {
-    debugger
   }
 
   public getUsers(): Observable<Array<IUser>> {
