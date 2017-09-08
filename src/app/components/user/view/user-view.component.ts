@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-Component({
+@Component({
   selector: 'users-view',
   templateUrl: 'user-view.component.html',
   styleUrls: [

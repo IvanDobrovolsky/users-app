@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-Component({
+@Component({
   selector: 'users-list',
   templateUrl: 'user-list.component.html',
   styleUrls: [
