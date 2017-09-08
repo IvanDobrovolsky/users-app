@@ -11,11 +11,15 @@ import * as routes from './routes';
   declarations: [
     components.AppComponent,
 
+    // pages
     components.UserListComponent,
     components.UserViewComponent,
     components.UserEditComponent,
     components.NotFoundComponent,
-    components.HomePageComponent
+    components.HomePageComponent,
+
+    // shared
+    components.UserComponent
   ],
   imports: [
     BrowserModule,

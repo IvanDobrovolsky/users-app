@@ -1,1 +1,7 @@
-<h1>User list</h1>
+<h1>Users list</h1>
+
+<div class="user-item" *ngFor="let user of (users$ | async)">
+  <br>
+  <user [data]="user"></user>
+  <hr>
+</div>
