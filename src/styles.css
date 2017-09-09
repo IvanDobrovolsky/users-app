@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Global app styles */
+
+/* Validation */
+.form-field {
+  margin: 15px 0;
+}
+input.has-error {
+  outline: 2px solid crimson;
+}
+
+.error-message {
+  color: crimson;
+}

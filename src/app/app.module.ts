@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgModule, Provider } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -24,7 +25,8 @@ import * as routes from './routes';
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes.userRoutes),
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     services.ApiService,

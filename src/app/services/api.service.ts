@@ -19,6 +19,6 @@ export class ApiService {
   }
 
   public updateUser(userId: string, updatedUser: IUser): Observable<IUser> {
-    return this.http.post<IUser>(this.apiUrl, updatedUser);
+    return this.http.put<IUser>(`${this.apiUrl}/users/${userId}`, updatedUser);
   }
 }
