@@ -71,7 +71,6 @@ export class UserEditComponent implements OnInit, OnDestroy {
     const apiServiceSubscription = this.apiService
       .updateUser(this.userData.id, this.userData)
       .subscribe((user: IUser) => {
-        console.log(user);
         alert('Updated! Will be redirected to the users list page...');
         this.router.navigate(['/user/list']);
       });
